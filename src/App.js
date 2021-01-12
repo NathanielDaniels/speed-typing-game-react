@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
 function App() {
+  const startingTime = 10
   const [text, setText] = useState("")
-  const [timeRemaining, setTimeRemaining] = useState(2)
+  const [timeRemaining, setTimeRemaining] = useState(startingTime)
   const [isTimeRunning, setIsTimeRunning] = useState(false)
   const [wordCount, setWordCount] = useState('')
 
@@ -35,12 +36,14 @@ function App() {
       <textarea
           onChange={handleChange}
           value={text}
+          disabled={!isTimeRunning}
       />
       <h4>Time remaining: {timeRemaining}</h4>
       <button 
         onClick={() => {
           setIsTimeRunning(true)
         }}
+        disabled={isTimeRunning}
         >Start
       </button>
       <h1>Word count: {wordCount}</h1>

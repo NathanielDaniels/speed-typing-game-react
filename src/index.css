@@ -34,6 +34,11 @@ button:hover {
   /* color: #fff; */
 }
 
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
 h1 {
   font-size: 20px;
   text-align: center;
