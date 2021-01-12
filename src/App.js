@@ -2,7 +2,7 @@ import React from 'react'
 import useWordGame from "./hooks/useWordGame"
 
 function App() {
-  const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame()
+  const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
 
   return (
     <div>

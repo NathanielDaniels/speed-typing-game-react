@@ -1,7 +1,6 @@
 import {useState, useEffect, useRef}from 'react'
 
-function useWordGame() {
-  const startTime = 10
+function useWordGame(startTime = 15) {
   const [text, setText] = useState("")
   const [timeRemaining, setTimeRemaining] = useState(startTime)
   const [isTimeRunning, setIsTimeRunning] = useState(false)
