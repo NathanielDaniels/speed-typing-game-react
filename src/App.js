@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
 function App() {
-  const startingTime = 10
+  const startTime = 10
   const [text, setText] = useState("")
-  const [timeRemaining, setTimeRemaining] = useState(startingTime)
+  const [timeRemaining, setTimeRemaining] = useState(startTime)
   const [isTimeRunning, setIsTimeRunning] = useState(false)
   const [wordCount, setWordCount] = useState('')
 
@@ -25,6 +25,9 @@ function App() {
 
   function startGame() {
     setIsTimeRunning(true)
+    setText("")
+    setTimeRemaining(startTime)
+     setWordCount(0)
   }
 
   useEffect(() => {
@@ -34,7 +37,6 @@ function App() {
       }, 1000)
     } else if (timeRemaining === 0) {
       endGame()
-     
     }
   }, [timeRemaining, isTimeRunning])
 
