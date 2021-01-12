@@ -14,7 +14,7 @@ function App() {
 
   function calculateWordCount(text) {
     const wordArray = text.trim().split(' ')
-    return wordArray.filter((word) => word !== '').length
+    return wordArray.filter((word) => word !== '' && word !== ',' && word !== '.' && word !== '/' && word !== '?' && word !== '>' && word !== '<').length
   }
 
   function endGame() {
@@ -45,6 +45,7 @@ function App() {
     <div>
       <h1>How fast do you type?</h1>
       <textarea
+          type="text"
           onChange={handleChange}
           value={text}
           disabled={!isTimeRunning}
