@@ -8,11 +8,11 @@ function About() {
 
   return (
     <>
-      <div className="navbar">
+      {/* <div className="navbar">
         <Link to="/">Game</Link>
         <Link to="/About">About</Link>
         <Link to="/Contact">Contact</Link>
-      </div>
+      </div> */}
       <div>
         <h1>About Page</h1>
         <p>Welcome to the About Page.</p>

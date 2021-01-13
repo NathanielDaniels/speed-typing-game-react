@@ -1,23 +1,22 @@
 import React from 'react'
-// import useWordGame from "./hooks/useWordGame"
-import {Link, Switch, Route} from "react-router-dom"
+import useWordGame from "../hooks/useWordGame"
+// import {Link, Switch, Route} from "react-router-dom"
 
-import About from "./pages/About"
-import Contact from "./pages/Contact"
-import Game from "./pages/Game"
+// import About from "./pages/About"
+// import Contact from "./pages/Contact"
 
-function App() {
-  // const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
+function Game() {
+  const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
 
   return (
     <div>
-      <div className="navbar">
+      {/* <div className="navbar">
         <Link to="/">Game</Link>
         <Link to="/About">About</Link>
         <Link to="/Contact">Contact</Link>
 
         <Switch>
-          <Route exact path="/"><Game/></Route>
+          <Route exact path="/" render={() => <h1>Game Page!</h1>}/>
           <Route path="/About">
             <About/>
           </Route>
@@ -26,8 +25,8 @@ function App() {
           </Route>
         </Switch>
         
-      </div>
-      {/* <div>
+      </div> */}
+      <div>
         <h1>How fast do you type?</h1>
         <textarea
           type="text"
@@ -43,9 +42,9 @@ function App() {
           >Start
         </button>
         <h1>Word count: {wordCount}</h1>
-      </div> */}
+      </div>
     </div>
   );
 }
 
-export default App;
+export default Game;
