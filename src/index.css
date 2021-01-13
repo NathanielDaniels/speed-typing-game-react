@@ -72,3 +72,13 @@ textarea {
   padding: 10px;
   font-size: 1.1rem;
 }
+
+.game-section,
+.about-section,
+.contact-section {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
