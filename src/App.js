@@ -15,18 +15,20 @@ function App() {
         <Link to="/">Game</Link>
         <Link to="/About">About</Link>
         <Link to="/Contact">Contact</Link>
-
-        <Switch>
-          <Route exact path="/"><Game/></Route>
-          <Route path="/About">
-            <About/>
-          </Route>
-          <Route path="/Contact">
-            <Contact/>
-          </Route>
-        </Switch>
-        
       </div>
+
+      <div>
+        <Switch>
+            <Route exact path="/"><Game/></Route>
+            <Route path="/About">
+              <About/>
+            </Route>
+            <Route path="/Contact">
+              <Contact/>
+            </Route>
+        </Switch>
+      </div>
+
       {/* <div>
         <h1>How fast do you type?</h1>
         <textarea
