@@ -1,6 +1,9 @@
 import React from 'react'
 import useWordGame from "./hooks/useWordGame"
-import {Link} from "react-router-dom"
+import {Link, Switch, Route} from "react-router-dom"
+
+import About from "./pages/About"
+import Contact from "./pages/Contact"
 
 function App() {
   const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
@@ -8,8 +11,15 @@ function App() {
   return (
     <div>
       <div className="navbar">
-        <Link>About</Link>
-        <Link>Contact</Link>
+        <Link to="/">Game</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Contact">Contact</Link>
+
+        <Switch>
+          <Route exact path="/" render={() => <h1>Game Page!</h1>}/>
+          <Route path="/About" render={() => <About/>}/>
+          <Route path="/Contact" render={() => <Contact/>}/>
+        </Switch>
       </div>
       <div>
         <h1>How fast do you type?</h1>
