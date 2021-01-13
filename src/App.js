@@ -17,9 +17,14 @@ function App() {
 
         <Switch>
           <Route exact path="/" render={() => <h1>Game Page!</h1>}/>
-          <Route path="/About" render={() => <About/>}/>
-          <Route path="/Contact" render={() => <Contact/>}/>
+          <Route path="/About">
+            <About/>
+          </Route>
+          <Route path="/Contact">
+            <Contact/>
+          </Route>
         </Switch>
+        
       </div>
       <div>
         <h1>How fast do you type?</h1>
