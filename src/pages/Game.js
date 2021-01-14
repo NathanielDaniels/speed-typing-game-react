@@ -1,7 +1,7 @@
 import React from 'react'
 import useWordGame from "../hooks/useWordGame"
-// import {Link, Switch, Route} from "react-router-dom"
 
+// import {Link, Switch, Route} from "react-router-dom"
 // import About from "./pages/About"
 // import Contact from "./pages/Contact"
 

@@ -1,18 +1,9 @@
 import React from 'react'
-// import {Link} from "react-router-dom"
-
-// import About from "./pages/About"
-// import Contact from "./pages/Contact"
 
 function About() {
 
   return (
     <>
-      {/* <div className="navbar">
-        <Link to="/">Game</Link>
-        <Link to="/About">About</Link>
-        <Link to="/Contact">Contact</Link>
-      </div> */}
       <div className="about-section">
         <h1>About Speed Typing</h1>
         <div className="about-info">
