@@ -57,7 +57,7 @@ function useWordGame(startTime = 15) {
     }
   }, [timeRemaining, isTimeRunning])
 
-  return {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame}
+  return {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame, calculateWordCount}
 
 }
 

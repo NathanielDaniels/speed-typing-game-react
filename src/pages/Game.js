@@ -6,7 +6,8 @@ import useWordGame from "../hooks/useWordGame"
 // import Contact from "./pages/Contact"
 
 function Game() {
-  const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
+  // const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
+  const {text, handleChange ,timeRemaining, isTimeRunning, textBoxRef, startGame, calculateWordCount} = useWordGame(10)
   return (
     <div className="game-section">
       <h1>How fast do you type?</h1>
@@ -32,7 +33,8 @@ function Game() {
         disabled={isTimeRunning}
         >Start
       </button>
-      <h1>Word count: <span>{wordCount}</span></h1>
+      {/* <h1>Word count: <span>{wordCount}</span></h1> */}
+      <h1>Word count: <span>{calculateWordCount(text)}</span></h1>
     </div>
   );
 }

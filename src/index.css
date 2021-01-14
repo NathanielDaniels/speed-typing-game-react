@@ -11,6 +11,7 @@ body {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   cursor: default;
+  letter-spacing: 0.8px;
 }
 
 body {
@@ -29,6 +30,16 @@ body {
 .navbar > * {
   margin: 0 10px;
   color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 .timeRemaining {
@@ -43,14 +54,9 @@ body {
   height: 40px;
 }
 
-h1 {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
 textarea {
   /* font-family: 'Press Start 2P', cursive; */
-  border: 3px solid black;
+  box-shadow: 0px 3px 5px rgb(20, 20, 20);
   border-radius: 8px;
   width: 90%;
   margin: 0 auto;
@@ -68,9 +74,7 @@ textarea {
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  letter-spacing: 1px;
 }
 
 .game-section {
