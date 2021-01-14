@@ -19,6 +19,15 @@ function Game() {
         disabled={!isTimeRunning}
       />
       <h4>Time remaining: {timeRemaining}</h4>
+      
+      {
+      //! Building input for user to choose time remaining
+      }
+      {/* <div className="timeRemaining">
+        <h4>Time remaining:</h4>
+        <input value={timeRemaining}></input>
+      </div> */}
+      
       <button 
         onClick={() => startGame()}
         disabled={isTimeRunning}

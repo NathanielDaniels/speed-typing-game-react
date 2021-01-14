@@ -4,7 +4,7 @@
 
 html,
 body {
-  background: black;
+  background: rgb(34, 34, 34);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -29,6 +29,18 @@ body {
 .navbar > * {
   margin: 0 10px;
   color: #fff;
+}
+
+.timeRemaining {
+  display: flex;
+}
+
+.timeRemaining > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 40px;
 }
 
 button {
