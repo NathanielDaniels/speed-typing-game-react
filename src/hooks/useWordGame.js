@@ -30,9 +30,7 @@ function useWordGame(startTime = 15) {
 
   function endGame() {
     document.querySelector('h4 > span').style.color = "red"
-    console.log(wordCount)
-    //! wordCount if statement needs work
-    if (wordCount !== "-") {
+    if (calculateWordCount(text) !== 0) {
       document.querySelector('h1 > span').style.color = "green"
     } else {
       document.querySelector('h1 > span').style.color = "red"
@@ -45,6 +43,7 @@ function useWordGame(startTime = 15) {
     if (isTimeRunning && timeRemaining > 0) {
       setTimeout(() => {
         setTimeRemaining(prevTime => prevTime - 1)
+        console.log("word count useEffect= ",wordCount)
       }, 1000)
     } else if (timeRemaining === 0) {
       endGame()
