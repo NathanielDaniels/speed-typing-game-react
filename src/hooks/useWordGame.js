@@ -17,13 +17,9 @@ function useWordGame(startTime = 15) {
     return wordArray.filter((word) => word !== '' && word !== ',' && word !== '.' && word !== '/' && word !== '?' && word !== '>' && word !== '<').length
   }
 
-  function endGame() {
-    setIsTimeRunning(false)
-    setTimeRemaining("Times Up!")
-    setWordCount(calculateWordCount(text))
-  }
-
   function startGame() {
+    document.querySelector('h4 > span').style.color = "green"
+    document.querySelector('h1 > span').style.color = "#fff"
     setIsTimeRunning(true)
     setText("")
     setTimeRemaining(startTime)
@@ -32,14 +28,24 @@ function useWordGame(startTime = 15) {
     textBoxRef.current.focus()
   }
 
+  function endGame() {
+    document.querySelector('h4 > span').style.color = "red"
+    console.log(wordCount)
+    //! wordCount if statement needs work
+    if (wordCount !== "-") {
+      document.querySelector('h1 > span').style.color = "green"
+    } else {
+      document.querySelector('h1 > span').style.color = "red"
+    }
+    setIsTimeRunning(false)
+    setTimeRemaining("Times Up!")
+    setWordCount(calculateWordCount(text))
+  }
   useEffect(() => {
     if (isTimeRunning && timeRemaining > 0) {
       setTimeout(() => {
         setTimeRemaining(prevTime => prevTime - 1)
       }, 1000)
-    } else if (timeRemaining < 5) {
-      const styleTime = document.querySelector('h4')
-      console.log(styleTime)
     } else if (timeRemaining === 0) {
       endGame()
     }
