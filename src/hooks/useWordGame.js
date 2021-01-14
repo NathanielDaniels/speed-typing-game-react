@@ -6,6 +6,8 @@ function useWordGame(startTime = 15) {
   const [isTimeRunning, setIsTimeRunning] = useState(false)
   const [wordCount, setWordCount] = useState('')
   const textBoxRef = useRef(null)
+  const countdownDisplay = document.querySelector('h4 > span')
+  const wordCountDisplay = document.querySelector('h1 > span')
 
   function handleChange(e) {
     const {value} = e.target
@@ -18,7 +20,10 @@ function useWordGame(startTime = 15) {
   }
 
   function startGame() {
+    //? Weird bug wont let me use global variable names
+    // countdownDisplay.style.color = "green"
     document.querySelector('h4 > span').style.color = "green"
+    // wordCountDisplay.style.color = "#fff"
     document.querySelector('h1 > span').style.color = "#fff"
     setIsTimeRunning(true)
     setText("")
@@ -32,18 +37,20 @@ function useWordGame(startTime = 15) {
     setIsTimeRunning(false)
     setTimeRemaining("Times Up!")
     setWordCount(calculateWordCount(text))
-    document.querySelector('h4 > span').style.color = "red"
+    countdownDisplay.style.color = "red"
     if (calculateWordCount(text) !== 0) {
-      document.querySelector('h1 > span').style.color = "green"
+      wordCountDisplay.style.color = "green"
     } else {
-      document.querySelector('h1 > span').style.color = "red"
+      wordCountDisplay.style.color = "red"
     }
   }
   useEffect(() => {
+    if (timeRemaining <= 5) {
+      countdownDisplay.style.color = "yellow"
+    }
     if (isTimeRunning && timeRemaining > 0) {
       setTimeout(() => {
         setTimeRemaining(prevTime => prevTime - 1)
-        console.log("word count useEffect= ",wordCount)
       }, 1000)
     } else if (timeRemaining === 0) {
       endGame()
