@@ -37,6 +37,9 @@ function useWordGame(startTime = 15) {
       setTimeout(() => {
         setTimeRemaining(prevTime => prevTime - 1)
       }, 1000)
+    } else if (timeRemaining < 5) {
+      const styleTime = document.querySelector('h4')
+      console.log(styleTime)
     } else if (timeRemaining === 0) {
       endGame()
     }

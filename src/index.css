@@ -43,33 +43,8 @@ body {
   height: 40px;
 }
 
-button {
-  /* font-family: 'Press Start 2P', cursive; */
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-  border: none;
-  background: #00b800;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-button:hover {
-  background: #00ff00;
-  /* color: #fff; */
-}
-
-button:disabled {
-  background: gray;
-  cursor: not-allowed;
-}
-
 h1 {
-  font-size: 20px;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -96,4 +71,29 @@ textarea {
   justify-content: center;
   align-items: center;
   letter-spacing: 1px;
+}
+
+button {
+  /* font-family: 'Press Start 2P', cursive; */
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background: #00b800;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background: #00ff00;
+  /* color: #fff; */
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
 }
