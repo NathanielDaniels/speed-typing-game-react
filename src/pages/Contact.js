@@ -15,7 +15,7 @@ function Contact() {
       </div> */}
       <div className="contact-section">
         <h1>Contact Page</h1>
-        <p>Welcome to the About Page.</p>
+        <p>Welcome to the Contact Page.</p>
       </div>
     </>
   );

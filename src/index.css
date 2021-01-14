@@ -33,6 +33,7 @@ body {
 
 button {
   /* font-family: 'Press Start 2P', cursive; */
+  border-radius: 5px;
   display: block;
   margin: 0 auto;
   border: none;
@@ -63,6 +64,7 @@ h1 {
 textarea {
   /* font-family: 'Press Start 2P', cursive; */
   border: 3px solid black;
+  border-radius: 8px;
   width: 90%;
   margin: 0 auto;
   outline: none;
@@ -81,4 +83,5 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  letter-spacing: 1px;
 }
