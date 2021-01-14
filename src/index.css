@@ -65,12 +65,22 @@ textarea {
 .game-section,
 .about-section,
 .contact-section {
-  height: 80vh;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   letter-spacing: 1px;
+}
+
+.game-section {
+  height: 85vh;
+  justify-content: center;
+}
+
+.about-section,
+.contact-section {
+  height: 60vh;
 }
 
 button {
