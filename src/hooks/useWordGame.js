@@ -29,15 +29,15 @@ function useWordGame(startTime = 15) {
   }
 
   function endGame() {
+    setIsTimeRunning(false)
+    setTimeRemaining("Times Up!")
+    setWordCount(calculateWordCount(text))
     document.querySelector('h4 > span').style.color = "red"
     if (calculateWordCount(text) !== 0) {
       document.querySelector('h1 > span').style.color = "green"
     } else {
       document.querySelector('h1 > span').style.color = "red"
     }
-    setIsTimeRunning(false)
-    setTimeRemaining("Times Up!")
-    setWordCount(calculateWordCount(text))
   }
   useEffect(() => {
     if (isTimeRunning && timeRemaining > 0) {
