@@ -16,7 +16,19 @@ function useWordGame(startTime = 15) {
 
   function calculateWordCount(text) {
     const wordArray = text.trim().split(' ')
-    return wordArray.filter((word) => word !== '' && word !== ',' && word !== '.' && word !== '/' && word !== '?' && word !== '>' && word !== '<').length
+    return wordArray.filter((word) => 
+      word !== '' 
+      && word !== ',' 
+      && word !== '.' 
+      && word !== '/' 
+      && word !== '?' 
+      && word !== '>' 
+      && word !== '<' 
+      && word !== "'"
+      && word !== "["
+      && word !== "]"
+      && word !== "|"
+      && word !== ";").length
   }
 
   function startGame() {
