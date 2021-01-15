@@ -47,7 +47,7 @@ function useWordGame(startTime = 15) {
 
   function endGame() {
     setIsTimeRunning(false)
-    setTimeRemaining("Times Up!")
+    setTimeRemaining("Time's Up!")
     setWordCount(calculateWordCount(text))
     countdownDisplay.style.color = "red"
     if (calculateWordCount(text) !== 0) {

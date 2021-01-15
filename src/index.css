@@ -1,3 +1,6 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Yusei+Magic&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -11,11 +14,14 @@ body {
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   cursor: default;
-  letter-spacing: 0.8px;
+  /* letter-spacing: 0.8px; */
+  letter-spacing: 2.5px;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Yusei Magic', sans-serif;
 }
 
 body {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .navbar {
@@ -25,6 +31,8 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  font-weight: 400;
+  letter-spacing: 1.4px;
 }
 
 .navbar > * {
@@ -104,11 +112,30 @@ button:disabled {
 }
 
 /* ========================================= */
+/*! About Page */
+
+.about-section {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.about-section mark {
+  background: #00b800;
+  color: #fff;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.about-section span {
+  color: red;
+  font-size: 1.1rem;
+}
+/* ========================================= */
 /*! Contact Page */
 /*? Side Social Media Links */
 
 .contact-section h1 {
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
 }
 
 .social-media {
@@ -131,10 +158,30 @@ button:disabled {
 .social-media a:focus {
   color: blueviolet;
 }
+.social-media a[title='Twitter']:hover,
+.social-media a[title='Twitter']:focus {
+  color: #1da1f2;
+}
+.social-media a[title='linkedIn']:hover,
+.social-media a[title='linkedIn']:focus {
+  color: #0077b5;
+}
+.social-media a[title='GitHub']:hover,
+.social-media a[title='GitHub']:focus {
+  color: #6e5494;
+}
 
-.social-media a:hover .social-icon,
-.social-media a:focus .social-icon {
-  color: blueviolet;
+.social-media a[title='Twitter']:hover .social-icon,
+.social-media a[title='Twitter']:focus .social-icon {
+  color: orange;
+}
+.social-media a[title='linkedIn']:hover .social-icon,
+.social-media a[title='linkedIn']:focus .social-icon {
+  color: #dd5143;
+}
+.social-media a[title='GitHub']:hover .social-icon,
+.social-media a[title='GitHub']:focus .social-icon {
+  color: #6cc644;
 }
 
 .social-icon-container {
