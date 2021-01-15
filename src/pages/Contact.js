@@ -19,7 +19,7 @@ function Contact () {
                 href='https://twitter.com/NathanDDaniels'
               >
                 <div className='social-icon-container'>
-                  <h4>Twitter</h4>
+                  <p>Twitter</p>
                   <FontAwesomeIcon className='social-icon' icon={faTwitter} />
                 </div>
               </a>
@@ -32,7 +32,7 @@ function Contact () {
                 href='https://www.linkedin.com/in/nathaniel-daniels-500740139/'
               >
                 <div className='social-icon-container'>
-                  <h4>LinkedIn</h4>
+                  <p>LinkedIn</p>
                   <FontAwesomeIcon className='social-icon' icon={faLinkedin} />
                 </div>
               </a>
@@ -45,7 +45,7 @@ function Contact () {
                 href='https://github.com/NathanielDaniels'
               >
                 <div className='social-icon-container'>
-                  <h4>Github</h4>
+                  <p>Github</p>
                   <FontAwesomeIcon className='social-icon' icon={faGithub} />
                 </div>
               </a>

@@ -71,20 +71,11 @@ textarea {
 .game-section,
 .about-section,
 .contact-section {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1.4em;
-}
-
-.game-section {
-  height: 85vh;
-}
-
-.about-section,
-.contact-section {
-  /* height: 42vh; */
 }
 
 button {
@@ -121,11 +112,13 @@ button:disabled {
 }
 
 .social-media {
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   gap: 1em;
   list-style: none;
   cursor: pointer;
+  padding: 0;
 }
 
 .social-media a {
@@ -145,14 +138,17 @@ button:disabled {
 }
 
 .social-icon-container {
+  /* border: 2px solid red; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  /* justify-content: center; */
   align-items: center;
   gap: 1em;
 }
 
-.social-icon-container > h4 {
+.social-icon-container > p {
   letter-spacing: 1.5px;
+  font-size: 1.2rem;
 }
 
 .social-icon-container > .social-icon {
