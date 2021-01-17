@@ -1,12 +1,7 @@
 import React from 'react'
 import useWordGame from "../hooks/useWordGame"
 
-// import {Link, Switch, Route} from "react-router-dom"
-// import About from "./pages/About"
-// import Contact from "./pages/Contact"
-
 function Game() {
-  // const {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame} = useWordGame(10)
   const {text, handleChange ,timeRemaining, isTimeRunning, textBoxRef, startGame, calculateWordCount} = useWordGame(10)
   return (
     <div className="game-section">
