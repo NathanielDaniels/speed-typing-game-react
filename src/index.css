@@ -163,23 +163,27 @@ button:disabled {
 .social-media a[title='Twitter']:focus {
   color: #1da1f2;
 }
-.social-media a[title='linkedIn']:hover,
-.social-media a[title='linkedIn']:focus {
-  color: #0077b5;
-}
-.social-media a[title='GitHub']:hover,
-.social-media a[title='GitHub']:focus {
-  color: #6e5494;
-}
 
 .social-media a[title='Twitter']:hover .social-icon,
 .social-media a[title='Twitter']:focus .social-icon {
   color: orange;
 }
+
+.social-media a[title='linkedIn']:hover,
+.social-media a[title='linkedIn']:focus {
+  color: #0077b5;
+}
+
 .social-media a[title='linkedIn']:hover .social-icon,
 .social-media a[title='linkedIn']:focus .social-icon {
   color: #dd5143;
 }
+
+.social-media a[title='GitHub']:hover,
+.social-media a[title='GitHub']:focus {
+  color: #6e5494;
+}
+
 .social-media a[title='GitHub']:hover .social-icon,
 .social-media a[title='GitHub']:focus .social-icon {
   color: #6cc644;
