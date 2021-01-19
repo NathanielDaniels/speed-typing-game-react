@@ -5,7 +5,6 @@ function Game() {
   const {text, handleChange ,timeRemaining, isTimeRunning, textBoxRef, startGame, calculateWordCount} = useWordGame(10)
   return (
     <div className="game-section">
-      {/* <h1>How fast do you type?</h1> */}
       <h1>How fast do you type?</h1>
       <textarea
         type="text"
