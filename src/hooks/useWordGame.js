@@ -58,7 +58,7 @@ function useWordGame(startTime = 15) {
     }
   }
   useEffect(() => {
-    if (timeRemaining < (startTime / 3)) {
+    if (timeRemaining < (startTime / 3.5)) {
       countdownDisplay.style.color = "yellow"
     }
     if (isTimeRunning && timeRemaining > 0) {
