@@ -28,7 +28,6 @@ function Game() {
         disabled={isTimeRunning}
         >Start
       </button>
-      {/* <h1>Word count: <span>{wordCount}</span></h1> */}
       <h1>Word count: <span>{calculateWordCount(text)}</span></h1>
     </div>
   );
