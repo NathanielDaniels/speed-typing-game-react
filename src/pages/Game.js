@@ -19,9 +19,10 @@ function Game() {
       //! Building input for user to choose time remaining
       /* <div className="timeRemaining">
         <h4>Time remaining:</h4>
-        <input value={timeRemaining}></input>
-      </div> */
+        <input value={timeRemaining} onChange={e => e.target.value}></input>
+      </div>  */
       }
+      
       
       <button 
         onClick={() => startGame()}
