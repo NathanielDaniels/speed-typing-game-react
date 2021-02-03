@@ -33,10 +33,7 @@ function useWordGame(startTime = 15) {
   }
 
   function startGame() {
-    //! Weird bug wont let me use global variable names
-    // countdownDisplay.style.color = "green"
     document.querySelector('h4 > span').style.color = "green"
-    // wordCountDisplay.style.color = "#fff"
     document.querySelector('h1 > span').style.color = "#fff"
     setIsTimeRunning(true)
     setText("")
