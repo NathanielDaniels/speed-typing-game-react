@@ -2,7 +2,7 @@ import React from 'react'
 import useWordGame from "../hooks/useWordGame"
 
 function Game() {
-  const {text, handleChange ,timeRemaining, isTimeRunning, textBoxRef, startGame, calculateWordCount} = useWordGame(10)
+  const {text, handleChange ,timeRemaining, isTimeRunning, textBoxRef, startGame, calculateWordCount} = useWordGame(25)
   return (
     <div className="game-section">
       <h1>How fast do you type?</h1>
