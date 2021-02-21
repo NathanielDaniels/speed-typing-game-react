@@ -17,7 +17,9 @@ function App() {
 
       <div>
         <Switch>
-            <Route exact path="/"><Game/></Route>
+            <Route exact path="/">
+              <Game/>
+            </Route>
             <Route path="/Instructions">
               <Instructions/>
             </Route>
