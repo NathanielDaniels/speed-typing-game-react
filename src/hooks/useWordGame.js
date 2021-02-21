@@ -8,7 +8,7 @@ function useWordGame(startTime = 25) {
 
   const textBoxRef = useRef(null)
   const countdownDisplay = document.querySelector('h4 > span')
-  const wordCountDisplay = document.querySelector('h1 > span')
+  // const wordCountDisplay = document.querySelector('h1 > span')
 
   function handleChange(e) {
     const {value} = e.target
@@ -54,7 +54,7 @@ function useWordGame(startTime = 25) {
   //     wordCountDisplay.style.color = "red"
   //   }
   // }
-  
+
   useEffect(() => {
     if (timeRemaining < (startTime / 3.5)) {
       countdownDisplay.style.color = "yellow"
