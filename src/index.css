@@ -33,7 +33,7 @@ body {
   letter-spacing: 1.4px;
 }
 
-.navbar > * {
+.navbar>* {
   margin: 0 10px;
   color: #fff;
   text-decoration: none;
@@ -52,7 +52,7 @@ h4 {
   display: flex;
 }
 
-.timeRemaining > input {
+.timeRemaining>input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ textarea {
 }
 
 .game-section,
-.about-section,
+.instructions-section,
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -108,22 +108,23 @@ button:disabled {
 /* ========================================= */
 /*! About Page */
 
-.about-section {
+.instructions-section {
   font-weight: 400;
   letter-spacing: 1.5px;
 }
 
-.about-section mark {
+.instructions-section mark {
   background: #00b800;
   color: #fff;
   padding: 0 5px;
   border-radius: 5px;
 }
 
-.about-section span {
+.instructions-section span {
   color: red;
   font-size: 1.1rem;
 }
+
 /* ========================================= */
 /*! Contact Page */
 /*? Side Social Media Links */
@@ -148,6 +149,7 @@ button:disabled {
 .social-media a:focus {
   color: blueviolet;
 }
+
 .social-media a[title='Twitter']:hover,
 .social-media a[title='Twitter']:focus {
   color: #1da1f2;
@@ -185,12 +187,12 @@ button:disabled {
   gap: 1em;
 }
 
-.social-icon-container > p {
+.social-icon-container>p {
   letter-spacing: 1.5px;
   font-size: 1.2rem;
 }
 
-.social-icon-container > .social-icon {
+.social-icon-container>.social-icon {
   font-size: 2rem;
   color: gray;
   transition: color 0.3s ease-in-out;
