@@ -43,17 +43,18 @@ function useWordGame(startTime = 25) {
     textBoxRef.current.focus()
   }
 
-  function endGame() {
-    setIsTimeRunning(false)
-    setTimeRemaining("Time's Up!")
-    setWordCount(calculateWordCount(text))
-    countdownDisplay.style.color = "red"
-    if (calculateWordCount(text) !== 0) {
-      wordCountDisplay.style.color = "green"
-    } else {
-      wordCountDisplay.style.color = "red"
-    }
-  }
+  // function endGame() {
+  //   setIsTimeRunning(false)
+  //   setTimeRemaining("Time's Up!")
+  //   setWordCount(calculateWordCount(text))
+  //   countdownDisplay.style.color = "red"
+  //   if (calculateWordCount(text) !== 0) {
+  //     wordCountDisplay.style.color = "green"
+  //   } else {
+  //     wordCountDisplay.style.color = "red"
+  //   }
+  // }
+  
   useEffect(() => {
     if (timeRemaining < (startTime / 3.5)) {
       countdownDisplay.style.color = "yellow"
@@ -63,9 +64,12 @@ function useWordGame(startTime = 25) {
         setTimeRemaining(prevTime => prevTime - 1)
       }, 1000)
     } else if (timeRemaining === 0) {
-      endGame()
+      // endGame()
+      setIsTimeRunning(false)
+      setTimeRemaining("Time's Up!")
+      countdownDisplay.style.color = "red"
     }
-  })
+  }, [timeRemaining, isTimeRunning, startTime, countdownDisplay])
 
   return {text, handleChange ,timeRemaining, isTimeRunning, wordCount, textBoxRef, startGame, calculateWordCount}
 
